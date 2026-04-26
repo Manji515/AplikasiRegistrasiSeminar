@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"
+  android:background="@color/white_bg">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:gravity="center"
+      android:text="Pendaftaran"
+      android:textColor="@color/blue_primary"
+      android:textSize="26sp"
+      android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:hint="Nama">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNamaForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:hint="Email">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmailForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:hint="Nomor HP">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPhoneForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Jenis Kelamin"
+      android:textColor="@color/text_dark"
+      android:textStyle="bold" />
+
+    <RadioGroup
+      android:id="@+id/radioGroupGender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <RadioButton
+        android:id="@+id/rbLaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki" />
+
+      <RadioButton
+        android:id="@+id/rbPerempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Perempuan" />
+    </RadioGroup>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="Pilihan Hobi"
+      android:textColor="@color/text_dark"
+      android:textStyle="bold" />
+
+    <CheckBox
+      android:id="@+id/cbHobi1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Membaca" />
+
+    <CheckBox
+      android:id="@+id/cbHobi2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Olahraga" />
+
+    <CheckBox
+      android:id="@+id/cbHobi3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Musik" />
+
+    <CheckBox
+      android:id="@+id/cbHobi4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Traveling" />
+    <CheckBox
+      android:id="@+id/cbHobi5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Gaming" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="Pilihan Seminar"
+      android:textColor="@color/text_dark"
+      android:textStyle="bold" />
+
+    <Spinner
+      android:id="@+id/spinnerSeminar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp" />
+
+    <CheckBox
+      android:id="@+id/cbAgreement"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="Saya menyetujui data yang diinput benar" />
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSubmitRegistration"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:layout_marginTop="24dp"
+      android:backgroundTint="@color/blue_primary"
+      android:text="Daftar"
+      android:textAllCaps="false"
+      android:textColor="@color/white_bg"
+      app:cornerRadius="16dp" />
+  </LinearLayout>
+</ScrollView>
