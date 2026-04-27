@@ -3,79 +3,86 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/white_bg"
+  android:background="@color/pastel_blue"
   android:orientation="vertical"
-  android:padding="24dp">
-
+  >
 
   <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="24dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:fontFamily="@font/inter_extrabold"
     android:gravity="center"
-    android:text="Hasil Pendaftaran"
-    android:textColor="@color/blue_primary"
+    android:text="HASIL PENDAFTARAN"
+    android:textColor="@color/dark_green"
     android:textSize="24sp"
     android:textStyle="bold" />
 
-  <TextView
-    android:id="@+id/tvResultNama"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="24dp"
-    android:textColor="@color/text_dark"
-    android:textSize="18sp" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/curve_bg"
+      android:orientation="vertical"
+      android:padding="24dp"
+      android:elevation="4dp">
 
-  <TextView
-    android:id="@+id/tvResultEmail"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
-    android:textColor="@color/text_dark"
-    android:textSize="18sp" />
+    <TextView
+      android:id="@+id/tvResultNama"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:fontFamily="@font/inter" />
 
-  <TextView
-    android:id="@+id/tvResultPhone"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
-    android:textColor="@color/text_dark"
-    android:textSize="18sp" />
+    <TextView
+      android:id="@+id/tvResultEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/inter"/>
 
-  <TextView
-    android:id="@+id/tvResultGender"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
-    android:textColor="@color/text_dark"
-    android:textSize="18sp" />
+    <TextView
+      android:id="@+id/tvResultPhone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/inter" />
 
-  <TextView
-    android:id="@+id/tvResultSeminar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
-    android:textColor="@color/text_dark"
-    android:textSize="18sp" />
+    <TextView
+      android:id="@+id/tvResultGender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/inter"/>
 
-  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="24dp"
-    android:gravity="center"
-    android:text="Pendaftaran Berhasil"
-    android:textColor="@color/blue_primary"
-    android:textSize="22sp"
-    android:textStyle="bold" />
+    <TextView
+      android:id="@+id/tvResultSeminar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/inter"/>
 
-  <com.google.android.material.button.MaterialButton
-    android:id="@+id/btnBackHome"
-    android:layout_width="match_parent"
-    android:layout_height="56dp"
-    android:layout_marginTop="28dp"
-    android:backgroundTint="@color/yellow_accent"
-    android:text="Kembali ke Halaman Utama"
-    android:textAllCaps="false"
-    android:textColor="@color/text_dark"
-    app:cornerRadius="16dp" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:fontFamily="@font/inter_semibold"
+      android:gravity="center"
+      android:text="Pendaftaran Berhasil"
+      android:textColor="@color/dark_green"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnBackHome"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:layout_marginTop="12dp"
+      android:backgroundTint="@color/dark_green"
+      android:fontFamily="@font/inter_semibold"
+      android:text="Kembali ke Halaman Utama"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      app:cornerRadius="16dp" />
+  </LinearLayout>
 </LinearLayout>

@@ -4,155 +4,188 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:fillViewport="true"
-  android:background="@color/white_bg">
+  android:background="@color/pastel_blue">
 
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="24dp">
+    >
 
     <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="24dp"
+      android:layout_marginTop="40dp"
+      android:layout_marginBottom="40dp"
+      android:fontFamily="@font/inter_extrabold"
       android:gravity="center"
-      android:text="Pendaftaran"
-      android:textColor="@color/blue_primary"
-      android:textSize="26sp"
+      android:text="PENDAFTARAN"
+      android:textColor="@color/dark_green"
+      android:textSize="24sp"
       android:textStyle="bold" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
-      android:hint="Nama">
+      android:layout_height="match_parent"
+      android:background="@drawable/curve_bg"
+      android:orientation="vertical"
+      android:padding="24dp"
+      android:elevation="4dp">
 
-      <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etNamaForm"
+      <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Nama">
 
-    <com.google.android.material.textfield.TextInputLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
-      android:hint="Email">
+        <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/etNamaForm"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:alpha="140"
+          android:fontFamily="@font/inter" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-      <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etEmailForm"
+      <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Email">
 
-    <com.google.android.material.textfield.TextInputLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
-      android:hint="Nomor HP">
+        <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/etEmailForm"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:alpha="140"
+          android:fontFamily="@font/inter" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-      <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etPhoneForm"
+      <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Nomor HP">
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
-      android:text="Jenis Kelamin"
-      android:textColor="@color/text_dark"
-      android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/etPhoneForm"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:alpha="140"
+          android:fontFamily="@font/inter" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-    <RadioGroup
-      android:id="@+id/radioGroupGender"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/rbLaki"
+      <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+          android:id="@+id/rbLaki"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/inter"
+          android:text="Laki-laki" />
+
+        <RadioButton
+          android:id="@+id/rbPerempuan"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:fontFamily="@font/inter"
+          android:text="Perempuan" />
+      </RadioGroup>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Pilihan Hobi"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold" />
+
+      <CheckBox
+        android:id="@+id/cbHobi1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Laki-laki" />
+        android:fontFamily="@font/inter"
+        android:text="Membaca" />
 
-      <RadioButton
-        android:id="@+id/rbPerempuan"
+      <CheckBox
+        android:id="@+id/cbHobi2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Perempuan" />
-    </RadioGroup>
+        android:fontFamily="@font/inter"
+        android:text="Olahraga" />
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
-      android:text="Pilihan Hobi"
-      android:textColor="@color/text_dark"
-      android:textStyle="bold" />
+      <CheckBox
+        android:id="@+id/cbHobi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Musik" />
 
-    <CheckBox
-      android:id="@+id/cbHobi1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Membaca" />
+      <CheckBox
+        android:id="@+id/cbHobi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Traveling" />
 
-    <CheckBox
-      android:id="@+id/cbHobi2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Olahraga" />
+      <CheckBox
+        android:id="@+id/cbHobi5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Gaming" />
 
-    <CheckBox
-      android:id="@+id/cbHobi3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Musik" />
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Pilihan Seminar"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold" />
 
-    <CheckBox
-      android:id="@+id/cbHobi4"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Traveling" />
-    <CheckBox
-      android:id="@+id/cbHobi5"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Gaming" />
+      <Spinner
+        android:id="@+id/spinnerSeminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/dark_green"
+        />
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
-      android:text="Pilihan Seminar"
-      android:textColor="@color/text_dark"
-      android:textStyle="bold" />
+      <CheckBox
+        android:id="@+id/cbAgreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter"
+        android:text="Saya menyetujui data yang diinput benar" />
 
-    <Spinner
-      android:id="@+id/spinnerSeminar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp" />
-
-    <CheckBox
-      android:id="@+id/cbAgreement"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
-      android:text="Saya menyetujui data yang diinput benar" />
-
-    <com.google.android.material.button.MaterialButton
-      android:id="@+id/btnSubmitRegistration"
-      android:layout_width="match_parent"
-      android:layout_height="56dp"
-      android:layout_marginTop="24dp"
-      android:backgroundTint="@color/blue_primary"
-      android:text="Daftar"
-      android:textAllCaps="false"
-      android:textColor="@color/white_bg"
-      app:cornerRadius="16dp" />
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmitRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/dark_green"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp" />
+    </LinearLayout>
   </LinearLayout>
 </ScrollView>
